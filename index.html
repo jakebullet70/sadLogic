@@ -9,7 +9,7 @@
     <style>
         body::after {
             content: "";
-            background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('background.jpg') no-repeat center center fixed;
+            background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('img/background.jpg') no-repeat center center fixed;
             top: 0;
             left: 0;
             bottom: 0;
@@ -44,7 +44,6 @@
 
         .text-font
         {
-            text-align: center; 
             color: rgb(255, 255, 255); 
             text-shadow: rgb(0, 0, 0) 1px 1px 0px; 
             line-height: 1.5; 
@@ -55,17 +54,49 @@
         .btn
         {
             margin-top: 15px;
+            width:10em;
         }
+
+        a
+        {
+            color: deepskyblue;
+        }
+
+        a:hover
+        {
+            color: cornflowerblue;
+        }
+
+        #myModal .modal .modal-dialog  {width:175%;}
     </style>
   </head>
   <body>
     
+    <!-- Modal HTML -->
+    <div id="myModal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Kitchen Central</h4>
+                </div>
+                <div class="modal-body">
+                    <img src="img/home.jpg">afdafdsa</img>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="center-div">
-        <div class="header-font">Family central</div>
-        <div class="text-font">Making your family more productive</div>
-        <a type="button" class="btn btn-success" href="mailto:sadlogic@sadlogic.com">Contact us</a>
+        <div class="header-font">SadLogic</div>
+        <p class="text-font text-left">Welcome to SadLogic engineering, home of Kitchen Central as well as custom Android programming.</p>
+        <p></p>
+        <p class="text-font text-left"><a href="#myModal" data-toggle="modal" role="button">Learn more about Kitchen Central...</a></p>
+        <a type="button" class="btn btn-success" href="mailto:support@sadlogic.com">Contact us</a>
     </div>
+
+
+
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
   </body>
